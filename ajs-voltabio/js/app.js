@@ -33,6 +33,9 @@ ajs.config(function($stateProvider, $urlRouterProvider) {
 		})
 		.state('voltabio', {
 			url: '/voltabio',
+			params: {
+				page: null
+			},
 			views: {
 				'content': {
 					templateUrl: 'templates/voltabio.html',
@@ -42,6 +45,9 @@ ajs.config(function($stateProvider, $urlRouterProvider) {
 		})
 		.state('service', {
 			url: '/service',
+			params: {
+				page: null
+			},
 			views: {
 				'content': {
 					templateUrl: 'templates/service.html',
@@ -49,12 +55,12 @@ ajs.config(function($stateProvider, $urlRouterProvider) {
 				}
 			}
 		})
-		.state('corporate', {
-			url: '/corporate',
+		.state('client', {
+			url: '/client',
 			views: {
 				'content': {
-					templateUrl: 'templates/corporate.html',
-					controller: 'CorporateCtrl'
+					templateUrl: 'templates/client.html',
+					controller: 'ClientCtrl'
 				}
 			}
 		})
